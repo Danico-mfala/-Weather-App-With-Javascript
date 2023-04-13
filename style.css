@@ -14,7 +14,7 @@ body{
 .container{
     position: relative;
     width: 400px;
-    height: 600px;
+    height: 100px;
     background-color: aliceblue;
     padding: 28px 32px;
     overflow: hidden;
@@ -66,7 +66,7 @@ body{
 }
 .search-box i{
     position: absolute;
-    color: #06283D;
+    color: #9252ce;
     font-size: 28px;
 }
 .weather-box{
@@ -115,4 +115,51 @@ body{
 .weather-details .wind{
     padding-right: 20px;
     justify-content: flex-end;
+}
+.weather-details i{
+    color: #9252ce;
+    font-size:26px;
+    margin-right: 10px;
+    margin-top: 6px;
+}
+.weather-details span{
+    color: #9252ce;
+    font-size: 22px;
+    font-weight: 500;
+}
+.weather-details p{
+    color:#9252ce;
+    font-size: 14px;
+    font-weight: 500;
+}
+.not-found{
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    scale: 0;
+    opacity: 0;
+    display: none;
+}
+.not-found img{
+    width: 70%;
+}
+.not-found p{
+    color: #9252ce;
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 12px;
+}
+.weather-box, .weather-details{
+    scale:0;
+    opacity: 0;
+}
+.fade-in{
+    animation: 0.5s fadeIn forwards;
+    animation-delay: 0.5s
+}
+@keyframes fadeIn{
+    to{
+        scale:1;
+        opacity: 1;
+    }
 }
